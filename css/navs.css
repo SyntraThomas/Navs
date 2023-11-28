@@ -3,7 +3,7 @@ html, body
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-nav
+nav#nav-hor
 {
     background-color: seashell;
 }
@@ -29,17 +29,18 @@ footer
     background-color: green;
 }
 
-/* Horizontal nav */
-nav ul
+/* Horizontal nav#nav-hor */
+nav#nav-hor ul,
+nav#nav-right ul
 {
     list-style: none;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 1rem;
     padding: 1rem;
 }
 
-nav ul li a
+nav#nav-hor ul li a
 {
     background-color: hotpink;
     display: block;
@@ -52,27 +53,42 @@ nav ul li a
     transition: all 300ms ease-in-out;
 }
 
-/* nav ul li a.link--current
+/* nav#nav-hor ul li a.link--current
 {
     background-color: limegreen;
 } */
 
-nav ul li a:hover,
-nav ul li a:focus,
-nav ul li a.link--current
+nav#nav-hor ul li a:hover,
+nav#nav-hor ul li a:focus,
+nav#nav-hor ul li a.link--current
 {
     background-color: antiquewhite;
     color: hotpink;
 }
 
-/* nav ul li a.link--current:hover,
-nav ul li a.link--current:focus
+/* nav#nav-hor ul li a.link--current:hover,
+nav#nav-hor ul li a.link--current:focus
 {
     background-color: limegreen;
     color: antiquewhite;
 } */
 
+nav#nav-right
+{
+    background-color: darkslategray;
+    color: snow;
+}
 
+nav#nav-right ul
+{
+    justify-content: flex-end;
+    gap: 0;
+}
+
+nav#nav-right ul li a
+{
+    color: snow;
+}
 
 
 
