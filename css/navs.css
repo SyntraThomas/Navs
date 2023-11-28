@@ -3,6 +3,12 @@ nav
     background-color: red;
 }
 
+main
+{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
 main section#content
 {
     background-color: blue;
@@ -11,4 +17,9 @@ main section#content
 main aside
 {
     background-color: yellow;
+}
+
+footer
+{
+    background-color: green;
 }
