@@ -19,10 +19,10 @@ main section#content
     background-color: blue;
 }
 
-main aside
+/* main aside
 {
     background-color: yellow;
-}
+} */
 
 footer
 {
@@ -31,7 +31,8 @@ footer
 
 /* Horizontal nav#nav-hor */
 nav#nav-hor ul,
-nav#nav-right ul
+nav#nav-right ul,
+nav#nav-special ul
 {
     list-style: none;
     display: flex;
@@ -73,24 +74,126 @@ nav#nav-hor ul li a.link--current:focus
     color: antiquewhite;
 } */
 
-nav#nav-right
+nav#nav-right,
+nav#nav-special
 {
-    background-color: darkslategray;
+    background-color: #2f4f4f;
     color: snow;
 }
 
-nav#nav-right ul
+nav#nav-right ul,
+nav#nav-special ul
 {
     justify-content: flex-end;
     gap: 0;
+    padding: 0;
 }
 
-nav#nav-right ul li a
+nav#nav-right ul li a,
+nav#nav-special ul li a
 {
+    display: block;
+    padding: 1rem 3rem;
+    border-right: 2px solid snow;
+
+    text-decoration: none;
     color: snow;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    transition: all 300ms ease-in-out;
+}
+
+nav#nav-right ul li:last-child a,
+nav#nav-special ul li:last-child a
+{
+    border-right: 0px;
+}
+
+nav#nav-right ul li a:hover,
+nav#nav-right ul li a:focus
+{
+    background-color: #648a8a;
 }
 
 
+
+
+
+
+
+nav#nav-special
+{
+    background-color: snow;
+}
+
+nav#nav-special ul
+{
+    gap: 1rem;
+}
+
+nav#nav-special ul li a
+{
+    color: darkslategray;
+    border-bottom: 2px solid transparent;
+}
+
+nav#nav-special ul li a:hover,
+nav#nav-special ul li a:focus,
+nav#nav-special ul li a.link--current
+{
+    border-bottom-color: darkslategray;
+}
+
+
+
+
+
+nav#nav-side ul
+{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav#nav-side ul li
+{
+    width: 100%;
+}
+
+nav#nav-side ul li a
+{
+    display: block;
+    
+    color: darkslategray;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: right;
+
+    padding: 1rem;
+    padding-right: 3rem;
+
+    border-bottom: 2px solid darkslategray;
+
+    transition: all 300ms ease-in-out;
+}
+
+/* nav#nav-side ul li:last-child a
+{
+    border-bottom: 0px;
+} */
+
+nav#nav-side ul li:first-child a
+{
+    border-top: 2px solid darkslategray;
+}
+
+nav#nav-side ul li a:hover,
+nav#nav-side ul li a:focus
+{
+    background-color: rgb(255, 224, 239);
+}
 
 
 
