@@ -1,0 +1,14 @@
+nav
+{
+    background-color: red;
+}
+
+main section#content
+{
+    background-color: blue;
+}
+
+main aside
+{
+    background-color: yellow;
+}
